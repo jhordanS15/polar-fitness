@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Reclamos</title>
+
+    <link rel="stylesheet" href="css/reclamos.css" />
+    <script src="js/codReclamaciones.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <style>
+		body {
+			background: #fff7ff;
+			background: linear-gradient(to right, browns, rgb(207, 169, 42));
+			}
+	</style>
+
+</head>
+
+  <body>
+    <h2 class="fs-bold text-center py-lg-3">
+		<img src="img/Imagen1.png" width="95" alt="" />
+		<img src="img/polar letra1.png" width="550" alt="text-center"/>
+    <h1>LIBRO DE RECLAMOS</h1>
+
+         <form action="#" method="post" name="form" id="form" required autofocus>
+              <div id="error"></div>
+
+              <div>
+                <label for="fname" ><b>Apellidos:</b></label><br>
+                <input type="text"  class="form-txtApellidos" id="txtApellidos" name="textApellidos"  placeholder="Ingresa tus apellidos" autofocus><br>
+              </div>
+
+              <div>
+                <label for="lname"><b>Nombres:</b></label><br>
+                <input type="text" class="form-control" id="txtNombres" name="txtNombres"  placeholder="Ingresa tus nombres"><br>
+              </div>
+
+              <div>
+                <label for="lname"><b>Dni:</b></label><br>
+                <input type="text" class="form-control" id="txtDNI" name="txtDNI"  placeholder="Ingresa tu Dni">
+              </div>
+
+              <div>
+                <br><label for="lname"><b>E-mail:</b></label><br>
+                <input type="text" class="form-control" id="txtEmail" name="txtEmail" placeholder="usuario@ejemplo.com" value="">
+              </div>
+
+              <div>
+                <br><label for="fname"><b>Sexo:</b></label><br>
+                <input type="radio" id="css" name="fav_language" value="M" checked/> Masculino
+                <input type="radio" id="javascript" name="fav_language" value="F" checked/> Femenino
+              </div><br>
+            </div>
+
+            <label for="Departamento"><b>Seleccione su Despartamento:</b></label><br>
+            <select class="form-select form-select-sm" aria-label=".form-select-sm example" required>
+              <option selected></option>
+              <option value="1">Amazonas</option>
+              <option value="2">Ancash</option>
+              <option value="3">Apurimac</option>
+              <option value="4">Arequipa</option>
+              <option value="5">Ayacucho</option>
+              <option value="6">Cajamarca</option>
+              <option value="7">Callao</option>
+              <option value="8">Cusco</option>
+              <option value="9">Huancavelica</option>
+              <option value="10">Huanuco</option>
+              <option value="11">Ica</option>
+              <option value="12">Junín</option>
+              <option value="13">La Libertad</option>
+              <option value="14">Lambayeque</option>
+              <option value="15">Lima</option>
+              <option value="16">Loreto</option>
+              <option value="17">Madre de Dios</option>
+              <option value="18">Moquegua</option>
+              <option value="19">Pasco</option>
+              <option value="20">Piura</option>
+              <option value="21">Puno</option>
+              <option value="22">San Martín</option>
+              <option value="23">Tacna</option>
+              <option value="24">Tumbes</option>
+              <option value="25">Ucayali</option>
+              </select><br>
+        </div>
+
+        <div class="row">
+          <div class="col">
+              <label for="Provincia" class="form-label">*Provincia</label>
+            <input type="text" class="form-control"Nombre placeholder="" aria-label="Provincia">
+          </div>
+          <div class="col">
+              <label for="Distrito" class="form-label">*Distrito</label>
+            <input type="text" class="form-control" placeholder="" aria-label="Distrito">
+          </div>
+      </div>
+      
+      <div class="row">
+        <div class="col">
+            <label for="dirección" class="form-label">*Dirección</label>
+          <input type="text" class="form-control"Nombre placeholder="" aria-label="Dirección">
+        </div>
+        <div class="col">
+            <label for="Telefono" class="form-label">*Telefono</label>
+          <input type="text" class="form-control" placeholder="" aria-label="Telefono">
+        </div>
+      </div>
+        <dive class="mb-auto">
+        <div class="col">
+           <label for="Fecha ">*Fecha </label>
+           <input type="date" name="" id=""placeholder="" aria-label="Fecha ">
+       <div class="col">
+          </dive>
+
+
+              <div>
+                <label for="obs"><b>Ingresar reclamo:</b></label>
+                <textarea name="message" rows="10" cols="90" maxlength="300" required></textarea>
+                <br><br>
+            </div>
+
+            <div class="form-check mb-3">
+              <input type="checkbox" class="form-check-input" id="validationFormCheck1" required>
+              <label class="form-check-label" for="validationFormCheck1"><u>Acepto teminos y condiciones</u></label>
+              <div class="invalid-feedback">Example invalid feedback text</div>
+            </div>
+
+            <div >
+                <input type="button" value="Enviar" name="btnEnviar"  id="btnEnviar"  />
+            </div>
+        </form> 
+        <script src="js/codReclamaciones.js"></script>
+  </body>
+</html>

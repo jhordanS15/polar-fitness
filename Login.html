@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="js/codigo.js"></script>
+
+
+    <style>
+        body {
+            background-image: url(img/fondo\ comida\ saludable.jpg );
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+
+        }
+
+    </style>
+</head>
+
+<body>
+   
+    <div class="container col-md-5 offset-md-3 mt-3 " >
+        <div class="row align-items-stretch">
+            <div class="col bg d-none d-lg-block col-md-2 col-lg-2 col-xl-2  ">
+            </div>
+            <div class="col bg-white p-5 rounded-end">
+                <div class="text-dark  ">
+                    <a title="INICIO" style="text-decoration:none" href="index.html"><b class="text-dark"> Regresar</b></a>
+                </div>
+                <img src="img/polar letra1.png" style="width:100%" class="mx-auto d-block" >
+                <h2 class="fs-bold text-center" style="color: rgb(214, 67, 195);"> <p >Bienvenido</p></h2>
+
+                <form action="#">   
+                    <div class="mb-4">
+                        <label for="email" class="form-label"><p class="text-primary fw-bold"> Nombre de usuario/Correo electrónico</p></label>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Ingrese usuario o correo" />
+                    </div>
+                    <div class="mb-4">
+                        
+                        <label for="password" class="form-label"> <p class="text-primary fw-bold">Contraseña </p></label>
+                        <input type="password" class="form-control" name="password" id="password" placeholder="Ingrese su contraseña" />
+                    </div>
+                    <div class="mb-4">
+                        <input type="checkbox" name="connected" class="form-check-input">
+                        <Label for="connected" class="form-check-label"><p class="text-primary">Recordar contraseña</p></Label>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <a href="index.html"> <button  class="btn btn-primary  btn-block text-mcenter" id="btnGrabar" type="button"> <b> Iniciar sesión</b></button></a>
+                    </div>
+                    <div class="my-3">
+                        <span>¿No tienes cuenta? <a href="registrar.html" target="_blank">Registrarse</a></span><br />
+                        <span ><a href="recuperarContraseña.html">Recuperar contraseña</a></span>
+                    </div>
+                </form>
+
+                <!--LOGIN CON REDES SOCIALES-->
+                <div class="container w-100 my-6">
+                    
+                    <div class="row text-center">
+                        <div class="col-12">Más información:</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <form action="https://www.facebook.com/polarfitnessfood/?ref=page_internal" target="_blank">
+                            <button class="btn btn-outline-primary w-100 my-1">
+                                <div class="row align-items-center">
+                                    <div class="col-2 d-none d-md-block">
+                                        <img src="img/Facebook_Logo_(2019).png" width="20" >
+                                    </div>
+                                    <div class="col-8 col-md-8 text-center">
+                                        Facebook
+                                    </div>
+                                </div>
+
+                            </button>
+                        </form>
+                        </div>
+                        <div class="col">
+                            <form action="https://api.whatsapp.com/send?phone=51902259752&app=facebook&entry_point=page_cta&fbclid=IwAR07F62cf0MaMxpHgJOIay847ZCwubSKQPO8GdpM04XnFQjfZi9jIkk82V4" target="_blank">
+                            <button class="btn btn-outline-success w-100 my-1">
+                                <div class="row align-items-center">
+                                    <div class="col-2 d-none d-md-block">
+                                        <img src="img/logo whatsapp.png" width="20">
+                                    </div>
+                                    <div class="col-8 col-md-8 text-center">
+                                        WhatsApp    
+                                    </div>
+                                </div>
+
+                            </button>
+                        </form>
+                        </div>
+                        <div class="col">
+                            <form action="https://www.instagram.com/polarfitnessfoodpe/" target="_blank">
+                            <button class="btn btn-outline-danger w-100 my-1">
+                                <div class="row align-items-center">
+                                    <div class="col-2 d-none d-md-block">
+                                        <img src="img/instagram.png" width="20">
+                                    </div>
+                                    <div class="col-8 col-md-8 text-center">
+                                        Instagram
+                                    </div>
+                                </div>
+
+                            </button>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/codigo.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

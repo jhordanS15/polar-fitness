@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Formulario polar fitness food </title>
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+
+  <style>
+	body {
+		background: #eeceee;
+		background: linear-gradient(to right, browns, rgb(207, 169, 42));
+		}
+</style>
+
+</head>
+<body>
+    <h2 class="fs-bold text-center py-lg-3">
+		<img src="img/Imagen1.png" width="95" alt="" />
+        <img src="img/polar letra.png" width="385" alt="text-center mx-auto"/>
+	<h2 class="fs-bold text-center py-9"><MARQUEE WIDTH=50% HEIGHT=50 SCROLLAMOUNT=10 BEHAVIOR=alternate> Registrate </MARQUEE></h2>
+	<main>
+		<form action="" class="formulario" id="formulario">
+			<!-- apellidos -->
+			<div class="formulario__grupo" id="grupo__apellidos">
+				<label for="apellidos" class="formulario__label">Apellidos</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="apellidos" id="apellidos" placeholder="Fitness">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">los apellidos tiene que tener letras.</p>
+			</div>
+
+			<!-- Nombre -->
+			<div class="formulario__grupo" id="grupo__nombre">
+				<label for="nombre" class="formulario__label">Nombre</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Polar">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El nombre tiene que tener letras.</p>
+			</div>
+
+			<!-- Contraseña -->
+			<div class="formulario__grupo" id="grupo__password">
+				<label for="password" class="formulario__label">Contraseña</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password" id="password">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+			</div>
+
+			<!-- Contraseña 2 -->
+			<div class="formulario__grupo" id="grupo__password2">
+				<label for="password2" class="formulario__label">Repetir Contraseña</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password2" id="password2">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+			</div>
+
+			<!-- Correo Electronico -->
+			<div class="formulario__grupo" id="grupo__correo">
+				<label for="correo" class="formulario__label">Correo Electrónico</label>
+				<div class="formulario__grupo-input">
+					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="crygt@correo.com">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+			</div>
+
+			<!-- Teléfono -->
+			<div class="formulario__grupo" id="grupo__telefono">
+				<label for="telefono" class="formulario__label">Teléfono</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="987654321">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+			</div>
+
+			<!-- ditrito -->
+			<div class="formulario__grupo" id="grupo__distrito">
+				<label for="distrito" class="formulario__label">Distrito</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="distrito" id="distrito" placeholder="">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El distrito solo puede letras.</p>
+			</div>
+			<!-- Provincia-->
+			<div class="formulario__grupo" id="grupo__provincia">
+				<label for="provincia" class="formulario__label">Provincia</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="provincia" id="provincia" placeholder="">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">la provinvia solo debe tener letras.</p>
+			</div>
+
+		</div>
+
+		<label for="Departamento"><b>Seleccione su Despartamento:</b></label><br>
+		<select class="form-select form-select-sm" aria-label=".form-select-sm example" required>
+		  <option selected></option>
+		  <option value="1">Amazonas</option>
+		  <option value="2">Ancash</option>
+		  <option value="3">Apurimac</option>
+		  <option value="4">Arequipa</option>
+		  <option value="5">Ayacucho</option>
+		  <option value="6">Cajamarca</option>
+		  <option value="7">Callao</option>
+		  <option value="8">Cusco</option>
+		  <option value="9">Huancavelica</option>
+		  <option value="10">Huanuco</option>
+		  <option value="11">Ica</option>
+		  <option value="12">Junín</option>
+		  <option value="13">La Libertad</option>
+		  <option value="14">Lambayeque</option>
+		  <option value="15">Lima</option>
+		  <option value="16">Loreto</option>
+		  <option value="17">Madre de Dios</option>
+		  <option value="18">Moquegua</option>
+		  <option value="19">Pasco</option>
+		  <option value="20">Piura</option>
+		  <option value="21">Puno</option>
+		  <option value="22">San Martín</option>
+		  <option value="23">Tacna</option>
+		  <option value="24">Tumbes</option>
+		  <option value="25">Ucayali</option>
+		  </select><br>
+	</div>
+			<!-- Terminos y Condiciones -->
+			<div class="formulario__grupo" id="grupo__terminos">
+				<label class="formulario__label">
+					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+					<u>Acepto los Terminos y Condiciones</u> 
+				</label>
+			</div>
+			<div class="formulario__mensaje" id="formulario__mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+			</div>
+			<!-- mantente inforamdo -->
+
+			<div class="formulario__grupo" id="grupo__publicidad">
+				<label class="formulario__label">
+					<input class="formulario__checkbox" type="checkbox" name="publicidad" id="publicity">
+					Deseo que Polar Fitess me mantenga informado de las promociones
+				</label>
+			</div>
+
+
+			<div class="formulario__mensaje" id="formulario__mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+			</div>
+
+
+			<div class="formulario__grupo formulario__grupo-btn-enviar">
+				<button type="submit" class="formulario__btn">Enviar</button>
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+			</div>
+		</form>
+	</main>
+
+	<script src="js/codigo.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

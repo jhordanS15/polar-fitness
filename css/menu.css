@@ -1,0 +1,305 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Lato:ital,wght@0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+:root{
+    --main-color: #000000;
+    --text-color: #171f07;
+    --container-color: #f1fcdc;
+    --header-height: 4.5rem;
+    --big-font-size: 4rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    list-style-type: none;
+    transition: 0.4s;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+html,body{
+    /* width:100%;
+    height:100%;
+    margin:0;
+    padding:0; */
+    overflow-x: hidden;
+    }
+body{
+    font-size: var(--normal-font-size);
+    background-color: #fff;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.btn{
+    width: 100%;
+    background-image:rgb(0, 0, 0);
+    box-shadow: 4px 4px 6px rgba(230, 39, 39, 0.1);
+    padding: 0.5rem 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    display: inline-block;
+    margin: 0 auto;
+    color: rgb(5, 5, 5);
+    border-radius: 6px;
+}
+.btn1{
+    width: 100%;
+    background-image:rgb(0, 0, 0);
+    box-shadow: 4px 4px 6px rgba(230, 39, 39, 0.1);
+    padding: 0.5rem 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    display: inline-block;
+    margin: 0 auto;
+    color: rgb(5, 5, 5);
+    border-radius: 6px;
+}
+.btn:hover{
+    letter-spacing: 6px;
+}
+.btn-alt{
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 1.5rem;
+    font-size: var(--normal-font-size);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    display: inline-block;
+    margin: 0 auto;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-radius: 6px;
+}
+#buscar{
+    border-radius: 30px;
+    width: 180px;
+    border: solid 1.8px rgb(230, 115, 214);
+}
+#btnBuscar{
+    border-radius: 10px;
+    border: solid 1.8px rgb(230, 115, 214);
+    text-emphasis-color:rgb(230, 115, 214) ;
+}
+@media screen and (max-width: 980px) {
+    div #buscar{
+    display: none;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    div #btnBuscar{
+    display: none;
+    }
+}
+.btn-alt:hover{
+    background-color: var(--main-color);
+    color: #fff;
+}
+/* Start Scroll Top Button */
+.scroll-top{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    z-index: 9999;
+    padding: 0.5rem;
+    visibility: hidden;
+}
+.scroll-icon{
+    font-size: 1.8rem;
+    color: #fff;
+}
+.scroll-top{
+    visibility: visible;
+    bottom: 1rem;
+}
+/* End Scroll Top Button */
+.header{
+    width: 100%;
+    height: 15%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: #fff;
+}
+.scroll-header{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.header .container{
+    max-width: 1050px;
+    width: calc(100% - 2rem);
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0;
+    margin: 0 auto;
+}
+
+.header ul{
+    display: flex;
+    align-items: center;
+}
+.header ul li{
+    margin-left: 1.5rem;
+}
+.header ul .nav-link{
+    font-size: var(--normal-font-size);
+    font-weight: bold;
+    color: var(--main-color);
+}
+.header ul .nav-link:hover,
+.header ul .nav-link.active{
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--main-color);
+}
+.header ul .btn{
+    font-size: var(--small-font-size);
+}
+.header .toggle-menu{
+    font-size: var(--h1-font-size);
+    color: var(--main-color);
+    padding: 0.1rem 0.5rem;
+    border: 1px solid var(--main-color);
+    border-radius: 6px;
+    cursor: pointer;
+    z-index: 99999;
+    transition: 0s;
+    display: none;
+}
+.header .toggle-menu:hover{
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+
+/* Start Media Queries */
+@media (max-width: 768px){
+    :root{
+        --big-font-size: 2rem;
+        --h1-font-size: 1.5rem;
+        --h2-font-size: 1.25rem;
+        --h3-font-size: 1rem;
+        --normal-font-size: 0.938rem;
+        --small-font-size: 0.813rem;
+    }
+    .header .container{
+        margin: 0.2rem 0;
+    }
+    .header .nav{
+        position: absolute;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 60%;
+        text-align: right;
+        padding: 0 2rem;
+        background-color: var(--container-color);
+        border-radius: 150px 0 0 0;
+        box-shadow: -10px -8px 4px rgba(0, 0, 0, 0.1);
+        z-index: 99999;
+    }
+    .header .nav.show-nav{
+        right: 0;
+    }
+    .nav ul{
+        display: block;
+    }
+    .nav ul li{
+        margin-bottom: 1rem;
+    }
+    .nav ul li:first-child{
+        margin-top: 8rem;
+    }
+    .header .toggle-menu{
+        display: block;
+    }
+    .home .container{
+        padding: 2rem 1rem;
+        grid-template-columns: unset;
+    }
+    .home .buttons{
+        padding: 0 3rem;
+        display: block;
+    }
+    .home .buttons a:first-child{
+        margin-bottom: 1.5rem;
+    }
+    .home img{
+        width: 50%;
+        margin: 0 auto;
+    }
+    .about .container{
+        grid-template-columns: unset;
+    }
+    .menu .container{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+    .contact .container{
+        grid-template-columns: unset;
+    }
+    .footer .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 560px) {
+    .home img{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .menu .container{
+        grid-template-columns: unset;
+    }
+    .footer .container{
+        grid-template-columns: unset;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
